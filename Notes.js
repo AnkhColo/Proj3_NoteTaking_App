@@ -20,7 +20,7 @@ function addNote(){
     detailsButton.textContent = 'Details';
     detailsButton.classList.add('detailsButton');
 
-    note.dataset.fullContent = noteContent
+    note.dataset.fullContent = noteContent;
 
     note.appendChild(detailsButton);
     noteList.appendChild(note);
