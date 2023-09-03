@@ -34,7 +34,7 @@ function openModal(event){
 if (event.target.classList.contains('detailsButton')){
     const note = event.target.parentNode;
     const content = note.dataset.fullContent;
-    modalNoteContent,textContent = content;
+    modalNoteContent.textContent = content;
     modal.style.display = 'block';      
 }
 }
