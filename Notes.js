@@ -11,7 +11,9 @@ closeButton.addEventListener('click', closeModal);
 
 function addNote(){
     const noteContent = noteText.value;
+
     if(noteContent.trim() !=='') {
+
     const note = document.createElement('div');
     note.classList.add('note');
     note.textContent = noteContent.length > 80 ? noteContent.substring(0, 80) + '...' : noteContent;
