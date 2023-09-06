@@ -42,7 +42,7 @@ if (event.target.classList.contains('detailsButton')){
 }
 function closeModal(){
     modal.style.display = 'none';
-    modalNoteContent.textContent = '';
+    modalNoteContent.textContent = "";
 }
 window.addEventListener('click', (event) => {
     if (event.target === modal){
