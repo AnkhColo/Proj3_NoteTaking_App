@@ -31,21 +31,20 @@ function addNote(){
 
 };
 
-
 function openModal(event){
-if (event.target.classList.contains('detailsButton')){
-    const note = event.target.parentNode;
-    const content = note.dataset.fullContent;
-    modalNoteContent.textContent = content;
-    modal.style.display = 'block';      
-}
-}
-function closeModal(){
-    modal.style.display = 'none';
-    modalNoteContent.textContent = "";
-}
-window.addEventListener('click', (event) => {
-    if (event.target === modal){
-        closeModal();
+    if (event.target.classList.contains('detailsButton')){
+        const note = event.target.parentNode;
+        const content = note.dataset.fullContent;
+        modalNoteContent.textContent = content;
+        modal.style.display = 'block';      
     }
-})
+    }
+    function closeModal(){
+        modal.style.display = 'none';
+        modalNoteContent.textContent = "";
+    }
+    window.addEventListener('click', (event) => {
+        if (event.target === modal){
+            closeModal();
+        }
+    })
